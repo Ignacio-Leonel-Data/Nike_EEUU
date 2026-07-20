@@ -94,10 +94,12 @@ Fact. Total = SUM(Nike_Ventas[Total Facturado])
 Cant de Ventas = COUNTROWS(Nike_Ventas)
 ```
 
-Indicador de Eficiencia = {
-    ("Margen Bajo(%)", NAMEOF('Medidas'[Margen Bajo(%)]), 0),
-    ("Margen Medio(%)", NAMEOF('Medidas'[Margen Medio(%)]), 1),
-    ("Margen Alto(%)", NAMEOF('Medidas'[Margen Alto(%)]), 2)
+### 🔸 Análisis de eficiencia
+```dax
+{
+    ("Margen Bajo (%)", NAMEOF('Tabla Medidas'[Margen Bajo (%)]), 0),
+    ("Margen Medio (%)", NAMEOF('Tabla Medidas'[Margen Medio (%)]), 1),
+    ("Margen Alto (%)", NAMEOF('Tabla Medidas'[Margen Alto (%)]), 2)
 }
 
 
